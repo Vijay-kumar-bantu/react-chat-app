@@ -1,0 +1,28 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"start": "tsc -b && node dist/index.js"
+	},
+	"keywords": [],
+	"author": "Vijay Kumar Bantu",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"crypto-js": "^4.2.0",
+		"dotenv": "^16.4.7",
+		"express": "^4.21.1",
+		"mongoose": "^8.8.4",
+		"ws": "^8.18.0"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.17",
+		"@types/crypto-js": "^4.2.2",
+		"@types/express": "^5.0.0",
+		"@types/mongoose": "^5.11.96",
+		"@types/ws": "^8.5.13",
+		"typescript": "^5.7.2"
+	}
+}

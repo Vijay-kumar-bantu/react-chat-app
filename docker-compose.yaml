@@ -1,0 +1,20 @@
+version: "1.0"
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb123
+    volumes:
+      - mongodb_data:/data/db
+  server:
+    image: vijaybantu24/chatapp_backend:latest
+    container_name: server
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodb
+    environment:
+      - MONGODB_URL=mongodb://mongodb123:27017/chatapp
+      - SECRET_KEY
+      - SERVER_PORT=8080
+volumes:
+  mongodb_data:
